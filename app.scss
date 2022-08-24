@@ -1,13 +1,50 @@
+.example-container {
+	background-color: #fff;
+	
+}
+
+.example-title {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 30rpx;
+}
+.example-title-text {
+	font-size: 32rpx;
+	font-weight: 700;
+}
+.example-detail {
+	.example-detail-grid-imformation {
+		font-size: 28rpx;
+	}
+	.example-detail-grid-information-attribute {
+		font-size: 26rpx;
+		color: rgba(184, 182, 182, 1);
+	}
+}
+
 .example-supply {
 	display: flex;
 	flex-direction: column;
-	padding: 20rpx 0 20rpx 0;
+	padding: 30rpx 0 30rpx 0;
 	border-top: 1rpx solid rgba(208, 208, 221, 1.0);
+	.example-time {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 96%;
+		margin: 0 20rpx 0 20rpx;
+		.example-time-detail {
+			font-size: 30rpx;
+			color: rgba(90, 179, 244, 1);
+		}
+	}
 }
 .button-wrap {
 	/deep/ .u-button {
 		height: 40rpx;
 		width: 120rpx;
+		margin-right: 10rpx;
 		border-radius: 0;
 	}
 }

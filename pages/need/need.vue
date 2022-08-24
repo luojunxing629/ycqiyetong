@@ -16,13 +16,16 @@
 		<view class="example-container">
 			<view class="example-supply" v-for="(item,index) in exampleNeed" :key="index">
 				<view class="example-title">
-					<u-tag text="需方" size="medium" bgColor="rgba(255, 116, 0, 1)" color="#fff"></u-tag>
+					<view class="button-wrap">
+					<u-button text="需方" size="medium" color="rgba(255, 116, 0, 1)" ></u-button>
+					</view>
 					<view class="example-title-text">{{item.titletext}}</view>
 				</view>
 				<view class="example-time">
-					<view class="button-container" style="width: 50rpx;">
+					<view class="button-container" style="width:10rpx;">
 					<u-button v-if="item.isDanger == 1" text="紧急" size="mini" color="linear-gradient(to right,rgba(255, 0, 0, 1),rgba(255, 118, 0, 1))"  ></u-button>
 					</view>
+					
 					<text class="example-time-line">有效期： {{item.effectiveTime}}</text>
 					<text class="example-time-detail">详情>></text>
 				</view>
@@ -87,9 +90,6 @@
 	margin-top: -10rpx;
 }
 .example-supply {
-	display: flex;
-	flex-direction: column;
-	padding: 20rpx 0 20rpx 0;
 	margin-top: 30rpx;
 	margin-bottom: 30rpx;
 	background-color: #fff;
@@ -97,37 +97,8 @@
 .example-container {
 	background-color: rgba(233, 237, 239, 1.0);
 }
-.example-detail {
-}
-.example-title {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 30rpx;
-}
-.example-title-text {
-	font-size: 33rpx;
-	font-weight: 700;
-}
-.example-time {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 80%;
-	margin: auto;
-}
 .example-time-line {
-	font-size: 30rpx;
-}
-.example-time-detail {
-	font-size: 30rpx;
-	color: rgba(90, 179, 244, 1);
-}
-.example-detail-grid-imformation {
-	font-size: 28rpx;
-}
-.example-detail-grid-information-attribute {
-	font-size: 26rpx;
-	color: rgba(184, 182, 182, 1);
-}
+			font-size: 30rpx;
+			margin-left: -100rpx;
+		}
 </style>

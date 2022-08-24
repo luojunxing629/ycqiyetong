@@ -94,36 +94,8 @@
 .example-container {
 	background-color: rgba(233, 237, 239, 1.0);
 }
-.example-detail {
-}
-.example-title {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 30rpx;
-}
-.example-title-text {
-	font-size: 33rpx;
-	font-weight: 700;
-}
-.example-time {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 80%;
-	margin: auto;
-}
 .example-time-line {
 	font-size: 30rpx;
-}
-.example-time-detail {
-	font-size: 30rpx;
-	color: rgba(90, 179, 244, 1);
-}
-.example-detail-grid-imformation {
-	font-size: 28rpx;
-}
-.example-detail-grid-information-attribute {
-	font-size: 26rpx;
-	color: rgba(184, 182, 182, 1);
+	margin-left: 20rpx;
 }
 </style>

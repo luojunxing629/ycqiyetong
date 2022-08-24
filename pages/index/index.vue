@@ -164,7 +164,7 @@
 }
 .notice-container {
 	height: 90rpx;
-	margin-top: 150rpx;
+	margin-top: 120rpx;
 	padding: 0rpx 30rpx 0 30rpx;
 	display: flex;
 	flex-direction: row;
@@ -220,25 +220,5 @@
 	font-size: 35rpx;
 	font-weight: 700;
 }
-.example-container {
-	background-color: #fff;
-	
-}
 
-.example-title {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 30rpx;
-}
-.example-title-text {
-	font-size: 33rpx;
-	font-weight: 700;
-}
-.example-detail-grid-imformation {
-	font-size: 28rpx;
-}
-.example-detail-grid-information-attribute {
-	font-size: 26rpx;
-	color: rgba(184, 182, 182, 1);
-}
 </style>
