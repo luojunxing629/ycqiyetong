@@ -89,7 +89,7 @@
 .example-supply {
 	display: flex;
 	flex-direction: column;
-	padding: 0 0 20rpx 0;
+	padding: 20rpx 0 20rpx 0;
 	margin-top: 30rpx;
 	margin-bottom: 30rpx;
 	background-color: #fff;

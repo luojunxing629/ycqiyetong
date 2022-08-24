@@ -32,7 +32,9 @@
 		<view class="example-container">
 			<view class="example-supply" v-for="(item,index) in exampleSupply" :key="index">
 				<view class="example-title">
-					<u-tag text="供方" size="medium" bgColor="rgba(90, 179, 244, 1)" color="#fff"></u-tag>
+					<view class="button-wrap" style="height: 25rpx;">
+					<u-button text="供方" size="medium" color="rgba(90, 179, 244, 1)" ></u-button>
+					</view>
 					<view class="example-title-text">{{item.titletext}}</view>
 				</view>
 				<view class="example-detail">
@@ -55,7 +57,9 @@
 			
 			<view class="example-supply" v-for="(item,index) in exampleNeed" :key="index">
 				<view class="example-title">
-					<u-tag text="需方" size="medium" borderColor="rgba(255, 116, 0, 1)" bgColor="rgba(255, 116, 0, 1)" color="#fff"></u-tag>
+					<view class="button-wrap" style="height: 25rpx;">
+					<u-button text="需方" size="medium" color="rgba(255, 116, 0, 1)"></u-button>
+					</view>
 					<view class="example-title-text">{{item.titletext}}</view>
 				</view>
 				<view class="example-detail">
@@ -83,13 +87,7 @@
 
 <script>
 	export default {
-		// onLaunch:function(){
-		// 	uni.onTabBarMidButtonTap(function(e){
-		// 		console.log(e)
-		// 		)
-				
-		// 	}
-		// }
+		
 		data() {
 			return {
 				title: 'Hello',
@@ -116,6 +114,7 @@
 		onLoad() {
 
 		},
+		
 		methods: {
 			handleMore() {
 				uni.navigateTo({
@@ -127,6 +126,14 @@
 </script>
 
 <style lang="scss" scoped>
+/deep/ .u-search__content {
+	height: 70rpx;
+}
+/deep/ .u-button {
+	height: 40rpx;
+	width: 120rpx;
+	border-radius: 0;
+}
 .container {
 	height: 100%;
 	background-color: rgba(240, 244, 247, 1);
@@ -149,14 +156,16 @@
 }
 .big-img {
 	position: absolute;
-	width: 90%;
+	width: 95%;
 	height: 250rpx;
 	top: 12%;
-	left: 5%;
+	left: 2.5%;
+
 }
 .notice-container {
 	height: 90rpx;
 	margin-top: 150rpx;
+	padding: 0rpx 30rpx 0 30rpx;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -200,6 +209,7 @@
 	justify-content: space-between;
 	background-color: #fff;
 	margin-top: 20rpx;
+	padding:0 30rpx 0 30rpx;
 	height: 100rpx;
 	align-items: center;
 }
@@ -209,18 +219,12 @@
 .search-title {
 	font-size: 35rpx;
 	font-weight: 700;
-	margin-left: 30rpx;
 }
 .example-container {
 	background-color: #fff;
 	
 }
-.example-supply {
-	display: flex;
-	flex-direction: column;
-	padding: 20rpx 0 20rpx 0;
-	border-top: 1rpx solid rgba(208, 208, 221, 1.0);
-}
+
 .example-title {
 	display: flex;
 	flex-direction: row;

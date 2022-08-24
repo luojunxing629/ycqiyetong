@@ -1,0 +1,13 @@
+.example-supply {
+	display: flex;
+	flex-direction: column;
+	padding: 20rpx 0 20rpx 0;
+	border-top: 1rpx solid rgba(208, 208, 221, 1.0);
+}
+.button-wrap {
+	/deep/ .u-button {
+		height: 40rpx;
+		width: 120rpx;
+		border-radius: 0;
+	}
+}

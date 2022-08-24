@@ -16,7 +16,9 @@
 		<view class="example-container">
 			<view class="example-supply" v-for="(item,index) in exampleSupply" :key="index">
 				<view class="example-title">
-					<u-tag text="供方" size="medium" bgColor="rgba(90, 179, 244, 1)" color="#fff"></u-tag>
+					<view class="button-wrap">
+					<u-button text="供方" size="medium" color="rgba(90, 179, 244, 1)"></u-button>
+					</view>
 					<view class="example-title-text">{{item.titletext}}</view>
 				</view>
 				<view class="example-time">
@@ -85,9 +87,6 @@
 	margin-top: -10rpx;
 }
 .example-supply {
-	display: flex;
-	flex-direction: column;
-	padding: 0 0 20rpx 0;
 	margin-top: 30rpx;
 	margin-bottom: 30rpx;
 	background-color: #fff;
