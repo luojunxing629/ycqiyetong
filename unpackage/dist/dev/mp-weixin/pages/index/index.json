@@ -1,0 +1,11 @@
+{
+  "navigationBarBackgroundColor": "transparent",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "u-grid": "/uni_modules/uview-ui/components/u-grid/u-grid",
+    "u-grid-item": "/uni_modules/uview-ui/components/u-grid-item/u-grid-item",
+    "u-search": "/uni_modules/uview-ui/components/u-search/u-search",
+    "u-tag": "/uni_modules/uview-ui/components/u-tag/u-tag"
+  }
+}
