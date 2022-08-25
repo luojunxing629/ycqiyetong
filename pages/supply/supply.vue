@@ -61,6 +61,7 @@
 				exampleSupply:[
 					{titletext:'ABB变频器，EMC滤波器2类环境 （接地） ACS880-01-07A6-5+E200', number:'500', type:'元器件', source:'工品行',effectiveTime:'2022-12-31'},
 					{titletext:'ABB变频器，EMC滤波器2类环境 （接地） ACS880-01-07A6-5+E200', number:'500', type:'元器件', source:'工品行',effectiveTime:'2022-12-31'},
+					{titletext:'ABB变频器，EMC滤波器2类环境', number:'500', type:'元器件', source:'工品行',effectiveTime:'2022-12-31'}
 				],
 				exampleNeed:[
 					{titletext:'ABB变频器，EMC滤波器2类环境 （接地） ACS880-01-07A6-5+E200', number:'500', type:'元器件', source:'工品行'}

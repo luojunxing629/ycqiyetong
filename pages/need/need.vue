@@ -22,8 +22,8 @@
 					<view class="example-title-text">{{item.titletext}}</view>
 				</view>
 				<view class="example-time">
-					<view class="button-container" style="width:10rpx;">
-					<u-button v-if="item.isDanger == 1" text="紧急" size="mini" color="linear-gradient(to right,rgba(255, 0, 0, 1),rgba(255, 118, 0, 1))"  ></u-button>
+					<view v-if="item.isDanger == 1"  class="button-container" style="width:10rpx;">
+					<u-button text="紧急" size="mini" color="linear-gradient(to right,rgba(255, 0, 0, 1),rgba(255, 118, 0, 1))"  ></u-button>
 					</view>
 					
 					<text class="example-time-line">有效期： {{item.effectiveTime}}</text>
@@ -68,7 +68,8 @@
 				],
 				exampleNeed:[
 					{titletext:'ABB变频器，EMC滤波器2类环境 （接地） ACS880-01-07A6-5+E200', number:'500', type:'元器件', source:'工品行',effectiveTime:'2022-12-31',isDanger:'1'},
-					{titletext:'ABB变频器，EMC滤波器2类环境 （接地） ACS880-01-07A6-5+E200', number:'500', type:'元器件', source:'工品行',effectiveTime:'2022-12-31',isDanger:'0'}
+					{titletext:'ABB变频器，EMC滤波器2类环境 （接地） ACS880-01-07A6-5+E200', number:'500', type:'元器件', source:'工品行',effectiveTime:'2022-12-31',isDanger:'0'},
+					{titletext:'ABB变频器，EMC滤波器2类环境', number:'500', type:'元器件', source:'工品行',effectiveTime:'2022-12-31',isDanger:'0'}
 				]
 			}
 		},
@@ -100,7 +101,11 @@
 	background-color: rgba(233, 237, 239, 1.0);
 }
 .example-time-line {
-			font-size: 30rpx;
-			margin-left: -100rpx;
-		}
+	font-size: 30rpx;
+	margin-left: 10rpx;
+}
+.button-container {
+	margin-left: 20rpx;
+	margin-right: -100rpx;
+}
 </style>
