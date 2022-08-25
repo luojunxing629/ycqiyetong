@@ -14,14 +14,7 @@
 			<view class="add-form-part1">
 					<text class="form-text">类型</text>
 					<view class="form-input">
-					<u--input
-						placeholder="请选择"
-						inputAlign="right"
-						fontSize="33rpx"
-					    border="none"
-					    v-model="value"
-					    @change="change"
-					></u--input>
+					<superwei-combox :candidates="candidates" placeholder="请选择" v-model="inputValue" @input="input" @select="select"></superwei-combox>
 					</view>
 			</view>
 			<view class="line-container" style="margin: 0rpx 20rpx 0rpx 20rpx;height: 5rpx;padding: 0rpx 20rpx 0rpx 20rpx;background-color: #fff;">
@@ -88,15 +81,8 @@
 			<view class="add-form-part2">
 				<text class="form-text">有效时间</text>
 				<view class="form-input">
-					<u--input
-						placeholder="请选择"
-						inputAlign="right"
-						fontSize="33rpx"
-					    border="none"
-					    v-model="value"
-					    @change="change"
-					></u--input>
-					</view>
+				<superwei-combox :candidates="candidates2" placeholder="请选择" v-model="inputValue" @input="input" @select="select"></superwei-combox>
+				</view>
 			</view>
 			
 			<view class="add-form-textarea">
@@ -133,12 +119,18 @@
 	export default {
 		data() {
 			return {
-				
-				}
+				candidates: ['产品物资','原料耗材','元器件','零部件','工业'],
+				candidates2: ['2022-1','2022-2','2022-3','2022-4','2022-5','2022-6','2022-7','2022-8','2022-9','2022-10','2022-11','2022-12']	
+			}
 			
 		},
 		methods: {
-			
+			input(e){
+			    console.log(e) // 选项一
+			},
+			select(e){
+			    console.log(e) // 选项一
+			}
 		}
 	}
 </script>
