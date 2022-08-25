@@ -101,7 +101,7 @@
 	width: 98%;
 	margin-left: 10rpx;
 	margin-right: 10rpx;
-	padding-bottom:200rpx;
+	padding-bottom:500rpx;
 	flex-direction: column;
 	background-color: #fff;
 }
