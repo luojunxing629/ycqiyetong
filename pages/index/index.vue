@@ -158,14 +158,13 @@
 	position: absolute;
 	width: 95%;
 	height: 250rpx;
-	top: 12%;
+	top: 10%;
 	left: 2.5%;
-
 }
 .notice-container {
-	height: 90rpx;
+	height: 100rpx;
 	margin-top: 120rpx;
-	padding: 0rpx 30rpx 0 30rpx;
+	padding: 0rpx 30rpx 0rpx 30rpx;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
