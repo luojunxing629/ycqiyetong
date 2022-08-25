@@ -11,13 +11,29 @@
 			<image class="navbar-img" src="../../static/index/navbarbackground.png"></image>
 		</view>
 		<view class="add-form-container">
-			<view class="add-form-part1">		
+			<view class="add-form-part1">
+					<text class="form-text">类型</text>
+					<view class="form-input">
+					<u--input
+						placeholder="请选择"
+						inputAlign="right"
+						fontSize="33rpx"
+					    border="none"
+					    v-model="value"
+					    @change="change"
+					></u--input>
+					</view>
+			</view>
+			<view class="line-container" style="margin: 0rpx 20rpx 0rpx 20rpx;height: 5rpx;padding: 0rpx 20rpx 0rpx 20rpx;background-color: #fff;">
+			<u-line color="rgba(208, 210, 216, 1.0)" ></u-line>
+			</view>
+			<view class="add-form-part2">		
 					<text class="form-text">标题</text>
 					<view class="form-input">
 					<u--input
 						placeholder="请填写"
 						inputAlign="right"
-						fontSize="36rpx"
+						fontSize="33rpx"
 					    border="none"
 					    v-model="value"
 					    @change="change"
@@ -30,7 +46,7 @@
 				<u--input
 					placeholder="请填写"
 					inputAlign="right"
-					fontSize="36rpx"
+					fontSize="33rpx"
 				    border="none"
 				    v-model="value"
 				    @change="change"
@@ -46,7 +62,7 @@
 					<u--input
 						placeholder="例如: 个"
 						inputAlign="right"
-						fontSize="36rpx"
+						fontSize="33rpx"
 					    border="none"
 					    v-model="value"
 					    @change="change"
@@ -59,7 +75,7 @@
 				<u--input
 					placeholder="请填写"
 					inputAlign="right"
-					fontSize="36rpx"
+					fontSize="33rpx"
 				    border="none"
 				    v-model="value"
 				    @change="change"
@@ -75,7 +91,7 @@
 					<u--input
 						placeholder="请选择"
 						inputAlign="right"
-						fontSize="36rpx"
+						fontSize="33rpx"
 					    border="none"
 					    v-model="value"
 					    @change="change"
@@ -143,8 +159,8 @@
 	width: 30%;
 }
 .form-text {
-	font-size: 36rpx;
-	font-weight: 550;
+	font-size: 33rpx;
+	font-weight: 500;
 }
 .add-form-part1 {
 	background-color: #fff;
@@ -168,7 +184,7 @@
 	align-items: center;
 }
 .form-textarea {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 }
 .add-form-textarea {
@@ -176,10 +192,10 @@
 	display: flex;
 	flex-direction: column;
 	margin: 20rpx 20rpx 0rpx 20rpx;
-	padding: 20rpx 0 20rpx 0;
+	padding: 20rpx 0 0rpx 0;
 	text{
 		margin-left: 20rpx;
-		margin-bottom: 20rpx;
+		margin-bottom: 0rpx;
 	}
 }
 .add-form-danger {
