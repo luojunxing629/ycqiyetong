@@ -88,7 +88,7 @@
 
 }
 .avatar {
-	margin-top: -50rpx;
+	margin-top: -80rpx;
 	margin-bottom: 30rpx;
 	width: 70%;
 	height: 150rpx;
@@ -101,7 +101,7 @@
 	width: 98%;
 	margin-left: 10rpx;
 	margin-right: 10rpx;
-	padding-bottom: 20rpx;
+	padding-bottom:200rpx;
 	flex-direction: column;
 	background-color: #fff;
 }

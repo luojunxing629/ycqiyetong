@@ -25,7 +25,9 @@
 					<text class="example-time-line">有效期： {{item.effectiveTime}}</text>
 					<text class="example-time-detail">详情>></text>
 				</view>
-				<u-line color="rgba(177, 177, 177, 1.0)" margin="30rpx 0 20rpx 0"></u-line>
+				<view class="line-container" style="width: 90%;padding: 30rpx 20rpx 20rpx 20rpx;margin: auto;">
+				<u-line color="rgba(208, 210, 216, 1.0)" ></u-line>
+				</view>
 				<view class="example-detail">
 					<u-grid col="3">
 						<u-grid-item class="example-detail-grid">
