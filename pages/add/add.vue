@@ -15,7 +15,7 @@
 					<text class="form-text">类型</text>
 					<view class="form-input">
 					<u--input
-						placeholder="请选"
+						placeholder="请选择"
 						inputAlign="right"
 						fontSize="33rpx"
 					    border="none"
