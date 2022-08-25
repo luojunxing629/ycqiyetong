@@ -97,8 +97,4 @@
 .example-container {
 	background-color: rgba(233, 237, 239, 1.0);
 }
-.example-time-line {
-	font-size: 30rpx;
-	margin-left: 20rpx;
-}
 </style>

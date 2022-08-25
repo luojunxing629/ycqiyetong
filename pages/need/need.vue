@@ -100,12 +100,8 @@
 .example-container {
 	background-color: rgba(233, 237, 239, 1.0);
 }
-.example-time-line {
-	font-size: 30rpx;
-	margin-left: 10rpx;
-}
 .button-container {
 	margin-left: 20rpx;
-	margin-right: -100rpx;
+	margin-right: -130rpx;
 }
 </style>
