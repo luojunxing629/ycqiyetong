@@ -220,5 +220,7 @@
 	font-size: 35rpx;
 	font-weight: 700;
 }
-
+.example-supply {
+	border-top: 1rpx solid rgba(215, 215, 234, 1.0);
+}
 </style>

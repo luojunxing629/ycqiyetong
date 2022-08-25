@@ -37,6 +37,9 @@
 				></u--input>
 				</view>		
 			</view>
+			<view class="line-container" style="margin: 0rpx 20rpx 0rpx 20rpx;height: 5rpx;padding: 0rpx 20rpx 0rpx 20rpx;background-color: #fff;">
+			<u-line color="rgba(208, 210, 216, 1.0)" ></u-line>
+			</view>
 			<view class="add-form-part2">
 				<text class="form-text">标题</text>
 				<view class="form-input">
@@ -62,6 +65,9 @@
 				    @change="change"
 				></u--input>
 				</view>		
+			</view>
+			<view class="line-container" style="margin: 0rpx 20rpx 0rpx 20rpx;height: 5rpx;padding: 0rpx 20rpx 0rpx 20rpx;background-color: #fff;">
+			<u-line color="rgba(208, 210, 216, 1.0)" ></u-line>
 			</view>
 			<view class="add-form-part2">
 				<text class="form-text">有效时间</text>
@@ -149,7 +155,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1rpx solid rgba(210, 210, 216, 1.0);
+	// border-bottom: 1rpx solid rgba(210, 210, 216, 1.0);
 }
 .add-form-part2 {
 	background-color: #fff;
